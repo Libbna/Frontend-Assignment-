@@ -1,14 +1,35 @@
 import React from 'react';
-// import './App.css';
+import { 
+  BrowserRouter as Router, 
+  Link, 
+  Route, 
+  Switch } from 'react-router-dom';
+import './App.css';
+import Detail from './components/Detail';
 import Header from './components/Header';
 import Home from './components/Home';
+import Login from './components/Login';
+
 
 
 const App = () => {
   return (
     <div className="App">
+      <Router>
         <Header />
-        <Home />
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/detail/:id">
+            <Detail />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>  
+      </Router>
+        
     </div>
   );
 }
