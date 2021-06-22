@@ -1,0 +1,25 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.right{
+    position: absolute;
+    right: 0;
+    background-color: aqua;   
+    width: 50%;
+    height: 660px;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 660px;
+}
+
+.inpt_color{
+    display: flex;
+    margin-top: 50%;
+    margin-left: 70px;
+}
