@@ -7,16 +7,14 @@ const LeftPanel = () => {
 
     const [btn, setBtn] = useState();
 
-    const handleClick = () => {
-        setBtn = 
-    }
+    
 
 
     return(
     <div className="left">
         <div className="inpt_color">
             <label>HEX Code</label>
-            <input className="pixedColor" type="color" onChange={handleClick()} ></input>
+            <input className="pixedColor" type="color" ></input>
         </div>
         
     </div>
